@@ -33,22 +33,45 @@ function split(arr) {
   let firstHalf = arr.slice(0, dividePoint);
   let secondHalf = arr.slice(dividePoint);
 
-  // STORING THE DIVIDED THINGS
-  let prelimSplitArr = [firstHalf, secondHalf];
-  // console.log(prelimSplitArr); ==> THESE NESTED ARRAYS F'IN WORK
-
-  // Loop over both 'halves' aka each of the two nested arrays to continually split and reassign firstHalf and secondHalf
-
-  // BASE CASE
-  // If the arr has length 1...
-  if (arr.length === 1) {
-    // ...you're done, find a way to return the whole shabang
-    //code
-  }
-  // arr.length > 1
-  else {
-    return split(firstHalf);
-  }
-  // return fully split array
-  return [firstHalf, secondHalf];
+  return mergeSort(firstHalf, secondHalf);
 }
+
+function mergeSort(firstHalf, secondHalf) {
+  return value;
+}
+
+// if (firstHalf.length !== 1) {
+// }
+
+// console.log(prelimSplitArr); ==> THESE NESTED ARRAYS F'IN WORK
+
+// // Loop over both 'halves' aka each of the two nested arrays to continually split and reassign firstHalf and secondHalf
+// for (let i = 0; i < prelimSplitArr.length; i++) {
+//   // Grab current half
+//   let currHalf = prelimSplitArr[i];
+//   let currDividePoint = (currHalf.length / 2);
+
+//   // BASE CASE
+//   if (firstHalf.length === 1 && secondHalf.length === 1) {
+//     return [firstHalf, secondHalf];
+//   }
+//   //
+//   else {
+
+//   }
+// }
+
+// // return fully split array
+// return [firstHalf, secondHalf];
+// }
+
+// // BASE CASE
+// // If the arr has length 1...
+// if (arr.length === 1) {
+//   // ...you're done, find a way to return the whole shabang
+//   //code
+// }
+// // arr.length > 1
+// else {
+//   return split(firstHalf);
+// }
